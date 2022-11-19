@@ -1,0 +1,15 @@
+.home_P{
+
+    background-color: rgb(156, 201, 240);
+    height: 450px;
+    text-transform: uppercase;
+    text-align: center;
+    font: 1em sans-serif;
+    
+}
+
+.home_P p{
+    position: relative;
+    top: 40%;
+    color: #000;
+}

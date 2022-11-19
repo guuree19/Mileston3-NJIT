@@ -1,0 +1,25 @@
+.about_page{
+    background-color: rgb(11, 175, 175);
+    height: 450px;
+    text-transform: lowercase;
+    font: 1em sans-serif;
+}
+
+.about_page p{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    color: #000;
+    text-align: left;
+    display: flex;
+    width: 40%;
+    height: 40%;
+    background-color: aliceblue;
+}
+.about_page h1{
+    text-transform: uppercase;
+    position: relative;
+    top: 20%;
+
+}
+
