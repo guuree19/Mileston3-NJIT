@@ -1,0 +1,12 @@
+.contact_p{
+    background-color: rgb(42, 85, 85);
+    height: 450px;
+    text-transform: uppercase;
+    text-align: center;
+    font: 1em sans-serif;
+}
+
+.contact_p h1 ,form{
+    position: relative;
+    top: 40%;
+}
