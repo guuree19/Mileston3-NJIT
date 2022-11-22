@@ -1,11 +1,13 @@
 const express = require('express')
 const { config } = require('dotenv');
 const bodyparser= require('body-parser')
+const routeHandler= require('./routes/handler.js')
 const App= express();
 config()
 
 App.use(bodyparser.urlencoded({extended:false}))
 App.use(bodyparser.json())
+App.use('/',routeHandler)
 
 
 App.get('/',(req, res) => {
