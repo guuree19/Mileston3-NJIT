@@ -1,12 +1,9 @@
-
-
 import React from 'react';
-
-import logo from './logo.svg';
 import './App.css';
 import  Home from"./Components/Home";
 import  About from"./Components/About";
 import Contact from './Components/Contact';
+import Projects from './Components/Projects'
 
 
 function App() {
@@ -15,6 +12,7 @@ function App() {
       <Home />
       <About />
       <Contact />
+      <Projects />
     </div>
   );
 }

@@ -3,11 +3,16 @@
 through this site,one can contact me. 
 it has home page,about me page,projects page,and contact page.
 
-TIPS:
 
 
+TIPS:(to run app)
+
+FRONTEND
     to Starts the development server
         npm start
+
+BACKEND
+    nodemon index.js
 
 
 -->
