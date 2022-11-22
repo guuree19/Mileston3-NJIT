@@ -7,8 +7,8 @@ function project(){
 
         <div className='project_p'>
             <div>project1</div>
-            <div>project1</div>
-            <div>project1</div>
+            <div>project2</div>
+            <div>project3</div>
 
         </div>
     )
