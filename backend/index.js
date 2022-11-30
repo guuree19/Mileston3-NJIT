@@ -8,10 +8,12 @@ config()
 
 App.use(bodyparser.urlencoded({extended:false}))
 App.use(bodyparser.json())
-App.use('/',routeHandler)
+
+
+// App.use('/',routeHandler)
 
 App.get('/',(req, res) => {
-    res.send('Application is working okS!');
+    res.send('Application is working ok!');
 });
 
 // DB Connection

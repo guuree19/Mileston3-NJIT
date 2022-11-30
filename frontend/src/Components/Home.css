@@ -1,3 +1,5 @@
+@import './Nav.css';
+
 .home_P{
 
     background-color: rgb(156, 201, 240);
@@ -11,5 +13,4 @@
 .home_P p{
     position: relative;
     top: 40%;
-    color: #000;
 }

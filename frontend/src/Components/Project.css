@@ -1,7 +1,44 @@
-.project_p{
-    background-color: rgb(137, 183, 223);
+.project_p .Nav{
+    /* background-color: rgb(137, 183, 223); */
     height: 450px;
     text-transform: uppercase;
-    text-align: center;
     font: 1em sans-serif;
+    border:solid 1px #0094ff;
+    padding:10px;
+    margin:5px;
+    font-size:15px;
+    font-family:Verdana;
+    text-align:center;
+    border-radius:10px;
 }
+
+.App  .project_p{
+    border:solid 1px #1eff00;
+    padding:10px;
+    margin:5px;
+    font-size:15px;
+    font-family:Verdana;
+    text-align:center;
+    border-radius:10px;
+}
+
+.App, .Nav{
+    background-color: rgb(139, 133, 133);
+    display: flex;
+    position: relative;
+    top: 350px;
+    height: 200px;
+    color: rgb(239, 248, 243);
+
+
+
+};
+
+
+
+
+
+
+    
+
+
