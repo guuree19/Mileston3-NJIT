@@ -1,5 +1,6 @@
 import React from "react";
 // import ReactDOM from 'react-dom'
+import "./Nav.css"
 import "./About.css"
 
 function About(){
