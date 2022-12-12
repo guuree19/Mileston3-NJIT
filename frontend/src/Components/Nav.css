@@ -19,7 +19,6 @@
   bottom:  400px;
 }
 .nav, .home_P{
-  background-color: rgb(156, 201, 240);
   height: 100%;
   width: 100%;
   text-transform: uppercase;
@@ -29,7 +28,6 @@
   top: 250px; 
 }
 .nav .home_p {
-  background-color: rgb(156, 201, 240);
   height: 100%;
   width: 100%;
   text-transform: uppercase;
