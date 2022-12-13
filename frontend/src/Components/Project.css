@@ -10,28 +10,72 @@
     font-family:Verdana;
     text-align:center;
     border-radius:10px;
+    color: aliceblue;
 }
 
 .App  .project_p{
-    border:solid 1px #1eff00;
-    padding:10px;
-    margin:5px;
+    border:solid 1px #2600ff;
     font-size:15px;
     font-family:Verdana;
     text-align:center;
     border-radius:10px;
+    width: 100%;
 }
+.project_p{
+    display: flexbox;
+    border:solid 1px #2600ff;
+    font-size:15px;
+    font-family:Verdana;
+    text-align:center;
+    border-radius:10px;
+    width: 100%;
+    position: relative;
+    top: 350px;
+    right: 623px;
+}
+.project_p .pro-1 {
+    float:left;
+    width:33%;
+    height:160px;
+    background-color:rgb(3, 108, 156);
+    border:solid black;
+    color: aliceblue;
+}
+.project_p, .pro-2 {
+    float:left;
+    width:33%;
+    height:160px;
+    background-color:rgb(3, 19, 92); 
+    border:solid black;
+    margin-left:20px;
+    color: aliceblue;
+}
+.project_p, .pro-3 {
+    float:right;
+    width:33%;
+    height:160px;
+    background-color:white;
+    border:solid black;
+    color: aliceblue;
 
+}
+.App,.project_p, .pro-1  .pro-2  .pro-3{
+    padding: 12px;
+    height:190px;
+    background-color:green;
+    padding-top:20px;
+    padding-left:15px;
+    padding-right:15px;
+    color: aliceblue;
+    display: grid;
+    word-spacing: 14px;
+}
 .App, .Nav{
-    background-color: rgb(139, 133, 133);
     display: flex;
     position: relative;
     top: 350px;
     height: 200px;
     color: rgb(239, 248, 243);
-
-
-
 };
 
 

@@ -2,7 +2,6 @@
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  top: 0px;
 }
 .nav__container{
   text-transform: uppercase;
@@ -51,6 +50,35 @@
   position: relative;
   left: 50px; 
 }
+.project_p, .pro-1 {
+  float:left;
+  width:33%;
+  height:160px;
+  background-color:rgb(3, 108, 156);
+  border:solid black;
+  color: aliceblue;
+
+}
+.project_p, .pro-2 {
+  float:left;
+  width:33%;
+  height:160px;
+  background-color:rgb(3, 19, 92); 
+  border:solid black;
+  margin-left:20px;
+  color: aliceblue;
+}
+.project_p, .pro-3 {
+  float:right;
+  width:33%;
+  height:160px;
+  background-color:white;
+  border:solid black;
+  color: aliceblue;
+
+}
+
+
 a {
   padding: 15px; 
   background-color: #f3eff7;
