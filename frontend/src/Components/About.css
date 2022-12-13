@@ -1,27 +1,30 @@
-.about_page{
+.App .nav, .about_page{
     background-color: rgb(2, 126, 50);
-    height: 450px;
+    position: relative;
+    top: 280px;
+    height: 600px;
+    width: 650px;
     font: 1em sans-serif;
     font-size: large;
-    padding: 0px 0px 0px 50px;
 }
 
 .about_page p{
-    position: relative;
-    top: 30%;
-    left: 30%;
-    color: #000;
+    color: rgb(10, 10, 10);
     text-align: left;
     display: flex;
-    width: 40%;
+    width: 80%;
     height: 40%;
-    background-color: aliceblue;
     font-family: serif;
+
 }
 .about_page h1{
     text-transform: uppercase;
+    text-align: center;
+    color: #000;
     position: relative;
-    top: 20%;
+    top: 0px;
+    right: 350px;
+    bottom: 400px;
 
 }
 

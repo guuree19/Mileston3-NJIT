@@ -1,12 +1,20 @@
 .contact_p{
-    background-color: rgb(185, 201, 201);
+    background-color: rgb(134, 204, 204);
     height: 450px;
     text-transform: uppercase;
     text-align: center;
     font: 1em sans-serif;
+    position: relative;
+    top: 350px;
+    right: 400px;
 }
 
 .contact_p h1 ,form{
     position: relative;
-    top: 40%;
+    top: 0px;
+}
+
+.App .contact_p{
+    position: relative;
+
 }
