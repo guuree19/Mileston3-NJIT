@@ -1,15 +1,18 @@
-
-.App .home_P{
-    height: 650px;
-    width: 700px;
-    color: #000;
-    text-transform: uppercase;
+.home-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 18px;
     text-align: center;
-    font: 1em sans-serif;
-    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-.home_P p{
-    position: relative;
-    top: 40%;
+  
+.home-container p {
+    margin: 0;
+    color: rgb(19, 1, 1);
 }
+  
+.home-container b {
+    color: #008080;
+}
+  
