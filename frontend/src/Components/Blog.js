@@ -16,7 +16,7 @@ const Blog = () => {
   ];
 
   return (
-    <div>
+    <div className='blog-sec'>
       {posts.map((post, index) => (
         <Post key={index} title={post.title} author={post.author} content={post.content} />
       ))}

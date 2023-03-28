@@ -1,32 +1,89 @@
 /* This is the styling for the "About me" page. It sets the background color, font size, and position of the page */
 .about_page {
-    background-color: rgb(2, 126, 50);
-    position: relative;
-    top: 280px;
-    height: 600px;
-    width: 650px;
-    font: 1em sans-serif;
-    font-size: large;
+  background-color: rgb(104, 177, 132);
+  position: relative;
+  top: 280px;
+  height: 600px;
+  width: 650px;
+  font: 1em sans-serif;
+  font-size: large;
+}
+.about_page{
+  margin-top: 80px;
 }
   
   /* This sets the styling for the text on the "About me" page */
 .about_page p {
-    color: rgb(10, 10, 10);
-    text-align: left;
-    display: flex;
-    width: 80%;
-    height: 40%;
-    font-family: serif;
+  color: rgb(10, 10, 10);
+  text-align: left;
+  display: flex;
+  width: 80%;
+  height: 40%;
+  font-family: serif;
 }
   
   /* This sets the styling for the heading on the "About me" page */
 .about_page h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-    position: relative;
-    top: 0px;
-    right: 350px;
-    bottom: 400px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  position: relative;
+  top: 0px;
+  right: 350px;
+  bottom: 400px;
 }
   
+/* Style for sub-menu container */
+.sub__menus {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 270px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+/* Style for active sub-menu container */
+.sub__menus__Active {
+  display: block;
+}
+
+/* Style for sub-menu list */
+.sub__menus ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for sub-menu list item */
+.sub__menus li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for sub-menu link */
+.sub__menus a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for sub-menu link hover */
+.sub__menus a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style for the About link hover */
+.nav-link:hover + .sub__menus {
+  display: block;
+  z-index: 1;
+}
+
+/* Style for the About link active */
+.nav-link.active + .sub__menus {
+  display: block;
+  z-index: 1;
+}

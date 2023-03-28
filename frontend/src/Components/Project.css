@@ -1,11 +1,12 @@
 .project-container {
     display: grid;
+    background-color: #5ca181;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
   
 .project-item {
-    background-color: #f1f1f1;
+    background-color: #5ca181;
     padding: 20px;
     text-align: center;
 }
