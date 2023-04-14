@@ -42,7 +42,7 @@
 }
 .responsive__nav__show {
   background-color: black;
-  color: white;
+  color: rgb(230, 11, 11);
 }
 
 
@@ -67,7 +67,7 @@
 }
   
 .responsive__nav__show{
-  background-color: rgb(2, 126, 50);
+  background-color: rgb(102, 135, 177);
   width: 100%;
   position: fixed;
   height: 100vh;

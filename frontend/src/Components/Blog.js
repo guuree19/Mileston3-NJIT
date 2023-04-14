@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './Post';
+import Nav from './Nav';
 
 const Blog = () => {
   const posts = [
@@ -17,6 +18,7 @@ const Blog = () => {
 
   return (
     <div className='blog-sec'>
+      <Nav />
       {posts.map((post, index) => (
         <Post key={index} title={post.title} author={post.author} content={post.content} />
       ))}

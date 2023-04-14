@@ -1,10 +1,12 @@
 import React from "react";
 import "./Contact.css";
+import Nav from "./Nav";
 
 function Contact() {
 // This component renders the "Contact" page
     return (
         <div className="contact_p">
+            <Nav />
             <h1>Get in touch</h1>
             <form>
                 <label for="fname" />
