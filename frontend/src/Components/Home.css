@@ -1,10 +1,15 @@
 .home-container {
-    background-color: #130606;
-    padding: 20px;
     font-size: 18px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(95, 93, 93, 0.2);
+
+    margin-top: 150px;
+    display: grid;
+    background-color: #f0f0f0; /* Use a light background color for better readability */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px; /* Add some padding for better spacing */
 }
   
 .home-container p {

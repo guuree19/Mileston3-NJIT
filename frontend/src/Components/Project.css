@@ -1,25 +1,37 @@
+/* This is the styling for the projects page */
 .project-container {
+    margin-top: 150px;
     display: grid;
-    background-color: #5ca181;
+    background-color: #f0f0f0; /* Use a light background color for better readability */
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-}
+    padding: 20px; /* Add some padding for better spacing */
+  }
   
-.project-item {
-    background-color: #5ca181;
+  .project-item {
+    background-color: #fff; /* Use a white background color for project items */
     padding: 20px;
     text-align: center;
-}
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    transition: transform 0.2s ease; /* Add a smooth transition on hover */
+  }
   
-.project-1 {
+  /* Add hover effect to project items */
+  .project-item:hover {
+    transform: translateY(-5px); /* Move the project item up slightly on hover */
+  }
+  
+  /* Style for individual project items */
+  .project-1 {
     grid-column: 1 / span 1;
-}
+  }
   
-.project-2 {
+  .project-2 {
     grid-column: 2 / span 1;
-}
+  }
   
-.project-3 {
+  .project-3 {
     grid-column: 3 / span 1;
-}
+  }
   

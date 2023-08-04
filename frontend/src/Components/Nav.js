@@ -1,12 +1,11 @@
-import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 const Nav = () => {
   const [isMenu, setisMenu] = useState(false);
   const [isResponsiveClose, setisResponsiveClose] = useState(false);
   const [isMenuSubMenu, setMenuSubMenu] = useState(false);
-
 
   const toggleClass = () => {
     setisMenu(!isMenu);
@@ -20,24 +19,17 @@ const Nav = () => {
   let boxClass = ["nav__container"];
   if (isMenu) {
     boxClass.push("responsive__nav__show");
-  } else {
-    boxClass.push("");
   }
 
   let boxClassSubMenu = ["sub__menus"];
   if (isMenuSubMenu) {
     boxClassSubMenu.push("sub__menus__Active");
-  } else {
-    boxClassSubMenu.push("");
   }
 
-  return ( 
+  return (
     <div className="nav">
       <div className="nav__header">
-        <span
-          className="menubar__button"
-          onClick={toggleClass}
-        >
+        <span className="menubar__button" onClick={toggleClass}>
           <i className={isMenu ? "fas fa-times" : "fas fa-bars"}></i>
         </span>
       </div>
@@ -51,7 +43,6 @@ const Nav = () => {
           <NavLink
             onClick={toggleSubmenu}
             className="nav-link"
-            activeClassName="active"
             to="/About"
           >
             About
@@ -61,7 +52,6 @@ const Nav = () => {
               <NavLink
                 onClick={toggleClass}
                 className="nav-link"
-                activeClassName="active"
                 to="/Contact"
               >
                 Contact
@@ -71,7 +61,6 @@ const Nav = () => {
               <NavLink
                 onClick={toggleClass}
                 className="nav-link"
-                activeClassName="active"
                 to="/Projects"
               >
                 Projects

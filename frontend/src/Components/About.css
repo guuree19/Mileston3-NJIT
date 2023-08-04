@@ -1,38 +1,33 @@
-/* This is the styling for the "About me" page. It sets the background color, font size, and position of the page */
+/* This is the styling for the "About me" page */
 .about_page {
-  background-color: rgb(1, 12, 5);
-  position: relative;
-  top: 280px;
+  background-color: #f0f0f0; /* Use a light background color for better readability */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
   height: 600px;
   width: 650px;
+  padding: 20px; /* Add some padding for better spacing */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
   font: 1em sans-serif;
   font-size: large;
 }
-.about_page{
-  margin-top: 80px;
-}
-  
-  /* This sets the styling for the text on the "About me" page */
-.about_page p {
-  color: rgb(10, 10, 10);
-  text-align: left;
-  display: flex;
-  width: 80%;
-  height: 40%;
-  font-family: serif;
-}
-  
-  /* This sets the styling for the heading on the "About me" page */
-.about_page h1 {
-  text-transform: uppercase;
+
+h1 {
+  font-size: 24px; /* Increase the font size for the heading */
   text-align: center;
-  color: #000;
-  position: relative;
-  top: 0px;
-  right: 350px;
-  bottom: 400px;
+  margin-top: 80px; /* Add some margin at the bottom of the heading */
+  color: #333; /* Use a darker color for the heading */
 }
-  
+
+.about_page p {
+  color: #444; /* Use a slightly darker color for the paragraph text */
+  text-align: left;
+  font-family: Arial, sans-serif; /* Use a common sans-serif font for better readability */
+  line-height: 1.6; /* Add some line height for better paragraph spacing */
+  margin-top: 40px; /* Add some margin at the top of the paragraph */
+}
+
 /* Style for sub-menu container */
 .sub__menus {
   position: absolute;
@@ -59,14 +54,14 @@
 /* Style for sub-menu list item */
 .sub__menus li {
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 /* Style for sub-menu link */
 .sub__menus a {
   display: block;
   padding: 10px;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
   transition: background-color 0.3s ease;
 }

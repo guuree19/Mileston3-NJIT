@@ -1,4 +1,7 @@
-.nav{
+/* nav.css */
+
+/* This styles the main navigation bar */
+.nav {
   background-color: rgb(131, 199, 158);
   width: 100%;
   position: fixed;
@@ -7,8 +10,9 @@
   border: 1px solid rgb(0, 0, 0, 0.5);
   z-index: 99;
 }
-  
-.nav__container{
+
+/* This styles the container for the navigation items */
+.nav__container {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -18,36 +22,27 @@
   height: 100%;
 }
 
-/* .nav__container{
+/* This styles the hamburger menu button */
+.menubar__button {
+  background-color: rgb(2, 126, 50);
   position: fixed;
-  top: 0;
-  bottom: 0;
-  right: -100%; /* Start off screen */
-  /* width: 300px; Set the width of the menu */
-  /* background-color: #cc0606; Set the background color */
-  /* transition: all 0.3s ease-in-out; Add a transition effect */
-/* } */
- */
-  
-.responsive__nav__show {
-  right: 0; /* Slide the menu into view when .responsive__nav__show is applied */
+  height: 50px;
+  width: 50px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 100;
+  display: none;
 }
 
-/* hamburger menu */
-.menubar__button i {
-  color: rgb(12, 1, 1);
-}
 .menubar__button i {
   font-size: 30px;
 }
-.responsive__nav__show {
-  background-color: black;
-  color: rgb(230, 11, 11);
-}
 
-
-  
-.nav__container li{
+/* This styles the main navigation items */
+.nav__container li {
   margin-left: 50px;
   position: relative;
   display: inline-block;
@@ -57,16 +52,18 @@
   letter-spacing: 0.1em;
   font-weight: bold;
 }
-  
-.nav__container li:hover{
+
+.nav__container li:hover {
   cursor: pointer;
 }
-  
-.active{
+
+/* This styles the active navigation item */
+.active {
   color: rgb(255, 229, 0);
 }
-  
-.responsive__nav__show{
+
+/* This styles the responsive navigation menu */
+.responsive__nav__show {
   background-color: rgb(102, 135, 177);
   width: 100%;
   position: fixed;
@@ -85,22 +82,9 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-  
-.menubar__button{
-  background-color: rgb(2, 126, 50);
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  z-index: 100;
-  display: none;
-}
-  
-.menubar__button:after{
+
+/* This styles the hamburger menu button animation */
+.menubar__button:after {
   content: "";
   position: absolute;
   top: 23px;
@@ -111,12 +95,12 @@
   box-shadow: 0px 10px 0px #fff, 0px -10px 0px #fff;
   transition: all 0.2s;
 }
-  
-.menubar__button:hover:after{
+
+.menubar__button:hover:after {
   box-shadow: 0px 5px 0px #fff, 0px -5px 0px #fff;
 }
-  
-.menubar__button:before{
+
+.menubar__button:before {
   content: "";
   position: absolute;
   top: 15px;
@@ -126,15 +110,16 @@
   background-color: #fff;
   transition: all 0.2s;
 }
-  
-.menubar__button:hover:before{
+
+.menubar__button:hover:before {
   top: 23px;
   right: 15px;
   width: 20px;
   height: 2px;
   background-color: #fff;
 }
-  
+
+/* This styles the sub-menus (dropdowns) */
 .sub__menus {
   margin: 0;
   padding: 0;
@@ -147,15 +132,13 @@
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
-  
-  .sub__menus__Active {
+
+/* This styles the sub-menus when active */
+.sub__menus__Active {
   max-height: 400px;
 }
-  
+
 .sub__menus li {
   margin: 0;
   padding: 0px;
-  
-  
-  
-}  
+}

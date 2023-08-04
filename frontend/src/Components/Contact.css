@@ -1,5 +1,5 @@
 /* This is the styling for the "Contact" page. It sets the background color, font size, and position of the page */
-.contact_p {
+/* .contact_p {
     background-color: rgb(134, 204, 204);
     height: 450px;
     text-transform: uppercase;
@@ -9,16 +9,16 @@
     top: 350px;
     right: 400px;
 }
-    
+     */
     /* This sets the styling for the heading and form on the "Contact" page */
-.contact_p h1,
+/* .contact_p h1,
     form {
     position: relative;
     top: 0px;
-}
+} */
     
     /* This sets the styling for the "Contact" page when it is displayed on the home page */
-.App .contact_p {
+/* .App .contact_p {
     position: relative;
 }
-    
+     */

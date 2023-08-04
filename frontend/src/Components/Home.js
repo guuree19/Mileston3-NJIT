@@ -3,6 +3,8 @@ import "./Home.css";
 import Nav from "./Nav";
 
 function Home() {
+  console.log("Home component is rendering!"); // Move the console.log statement here
+
   return (
     <div className="home-container">
       <Nav />
