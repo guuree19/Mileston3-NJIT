@@ -1,12 +1,9 @@
 import React from "react";
-// import "./services.css";
-// import Nav from "./Nav";
-
+import "./services.css";
 
 function Services() {
   return (
     <div className="services">
-      {/* <Nav /> */}
       <h1>Our Software Development Services</h1>
       <ul>
         <li>Custom web application development</li>

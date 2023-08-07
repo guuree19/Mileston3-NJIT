@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
+
 const Nav = () => {
   const [isMenu, setisMenu] = useState(false);
   const [isResponsiveClose, setisResponsiveClose] = useState(false);
@@ -83,6 +84,12 @@ const Nav = () => {
             Resume/CV
           </NavLink>
         </li>
+        <li>
+          <NavLink onClick={toggleClass} className="nav-link" to="/PostForm">
+            Post Form
+          </NavLink>
+        </li>
+
       </ul>
     </div>
   );

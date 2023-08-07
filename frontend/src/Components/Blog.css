@@ -1,5 +1,34 @@
-/* .Blog-sec{
-    background-color: rgb(155, 114, 114);
+/* blog.css */
 
-
-} */
+.blog-sec {
+    background-color: #9690ee; /* Reusing the background color from previous work */
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 5px;
+    color: #fff; /* Set text color to white */
+  }
+  
+  .blog-sec h1 {
+    font-size: 2rem;
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+  }
+  
+  /* Optional: Add styles for each individual blog post */
+  .post {
+    margin-bottom: 20px; /* Add spacing between blog posts */
+    padding: 10px;
+    background-color: #fff; /* Set background color for each blog post */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  }
+  
+  .post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px; /* Add spacing below the title */
+  }
+  
+  .post p {
+    font-size: 1.2rem;
+  }
+  

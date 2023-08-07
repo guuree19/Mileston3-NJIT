@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
 import Blog from './Components/Blog';
+import PostForm from './Components/postForm';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import Services from './Components/Services';
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/Projects" element={<Projects />} />
         <Route exact path="/Services" element={<Services />} />
         <Route exact path="/Resume" element={<Resume />} />
+        <Route exact path="/PostForm" element={<PostForm />} />
       </Routes>
     </div>
   );
