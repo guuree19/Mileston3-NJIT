@@ -2,7 +2,7 @@
 
 /* This styles the main navigation bar */
 .nav {
-  background-color: rgb(131, 199, 158);
+  background-color: rgb(102, 135, 177); /* Updated background color */
   width: 100%;
   position: fixed;
   top: 0;
@@ -10,6 +10,30 @@
   border: 1px solid rgb(0, 0, 0, 0.5);
   z-index: 99;
 }
+/* Add styling for the Post Form link */
+.nav-link {
+  margin-right: 15px;
+  font-size: 18px; /* Slightly reduce font size for a cleaner look */
+  color: #444; /* Use a slightly darker color for better contrast */
+  text-transform: uppercase;
+  letter-spacing: 0.08em; /* Slightly reduce letter spacing */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.nav-link:hover {
+  color: #6c6e72; /* Change color on hover for better feedback */
+}
+
+/* Style for the active navigation link */
+.nav-link.active {
+  color: #2d038f;
+  /* You can also consider adding a background color or underline for active links */
+  /* background-color: #e2e2e2; */
+  /* text-decoration: underline; */
+}
+
 
 /* This styles the container for the navigation items */
 .nav__container {
@@ -29,16 +53,17 @@
   height: 50px;
   width: 50px;
   top: 15px;
-  right: 15px;
+  left: 45px; /* Change 'right' to 'left' */
   cursor: pointer;
   border: none;
   outline: none;
   z-index: 100;
-  display: none;
+  display: block;
 }
 
 .menubar__button i {
   font-size: 30px;
+  color: #ffffff; /* Set icon color */
 }
 
 /* This styles the main navigation items */
@@ -71,7 +96,7 @@
   top: 80px;
   left: 0;
   transition: transform 0.5s ease-in-out;
-  z-index: 98;
+  z-index: 98; /* Decreased z-index value */
   overflow-y: auto;
   padding: 50px 0 0;
   box-sizing: border-box;
@@ -84,26 +109,11 @@
 }
 
 /* This styles the hamburger menu button animation */
-.menubar__button:after {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 15px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  box-shadow: 0px 10px 0px #fff, 0px -10px 0px #fff;
-  transition: all 0.2s;
-}
-
-.menubar__button:hover:after {
-  box-shadow: 0px 5px 0px #fff, 0px -5px 0px #fff;
-}
-
+.menubar__button:after,
 .menubar__button:before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 23px;
   right: 15px;
   width: 20px;
   height: 2px;
@@ -111,12 +121,9 @@
   transition: all 0.2s;
 }
 
+.menubar__button:hover:after,
 .menubar__button:hover:before {
-  top: 23px;
-  right: 15px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
+  box-shadow: 0px 5px 0px #fff, 0px -5px 0px #fff;
 }
 
 /* This styles the sub-menus (dropdowns) */

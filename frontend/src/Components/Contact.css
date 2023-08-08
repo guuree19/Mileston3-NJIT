@@ -1,24 +1,56 @@
-/* This is the styling for the "Contact" page. It sets the background color, font size, and position of the page */
-/* .contact_p {
-    background-color: rgb(134, 204, 204);
-    height: 450px;
-    text-transform: uppercase;
-    text-align: center;
-    font: 1em sans-serif;
-    position: relative;
-    top: 350px;
-    right: 400px;
-}
-     */
-    /* This sets the styling for the heading and form on the "Contact" page */
-/* .contact_p h1,
-    form {
-    position: relative;
-    top: 0px;
-} */
-    
-    /* This sets the styling for the "Contact" page when it is displayed on the home page */
-/* .App .contact_p {
-    position: relative;
-}
-     */
+.contact-container {
+    background-color: #f5f5f5;
+    padding: 50px;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    background-color: #6c6e72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #555;
+  }
+  

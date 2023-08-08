@@ -85,7 +85,8 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink onClick={toggleClass} className="nav-link" to="/PostForm">
+          <NavLink onClick={toggleClass} className="nav-link"
+             to="/PostForm">
             Post Form
           </NavLink>
         </li>

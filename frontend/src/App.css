@@ -1,7 +1,10 @@
-.App {
-  text-align: center;
-  position: relative;
-  top: 0px;
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Start from the top */
+  margin-top: 80px; /* Space for the navigation bar */
 }
 
 .App-logo {
