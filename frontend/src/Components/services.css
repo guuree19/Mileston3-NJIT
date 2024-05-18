@@ -1,0 +1,26 @@
+/* services.css */
+
+.services {
+    background-color: #9690ee;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 80px;
+    text-align: center; /* Center the content horizontally */
+    color: #fff; /* Set text color to white */
+  }
+  
+  .services h1 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add some spacing below the heading */
+  }
+
+  .services ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+  }
+  
+  .services li {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+  

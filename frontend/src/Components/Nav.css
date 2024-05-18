@@ -1,91 +1,79 @@
-.App{
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-}
-.nav__container{
-  text-transform: uppercase;
+/* Base styling for navigation */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
-  color: rgb(19, 18, 18);
+  background-color: #f8fafc;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s;
   display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 550px;
-}
-.App .Nav .nav__container {
-  position: relative;
-  bottom:  400px;
-}
-.nav, .home_P{
-  height: 100%;
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font: 1em sans-serif;
-  position: relative;
-  top: 250px; 
-}
-.nav .home_p {
-  height: 100%;
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font: 1em sans-serif;
-  text-transform: uppercase;
-  font: 1em sans-serif;
-  border:solid 1px #0094ff;
-  padding:10px;
-  margin:5px;
-  font-size:15px;
-  font-family:Verdana;
-  text-align:center;
-  border-radius:10px;
-}
-.nav, .about_page{
-  height: 600px;
-  width: 560px;
-  text-align: center;
-  font: 1em sans-serif;
-  position: relative;
-  left: 50px; 
-}
-.project_p, .pro-1 {
-  float:left;
-  width:33%;
-  height:160px;
-  background-color:rgb(3, 108, 156);
-  border:solid black;
-  color: aliceblue;
-
-}
-.project_p, .pro-2 {
-  float:left;
-  width:33%;
-  height:160px;
-  background-color:rgb(3, 19, 92); 
-  border:solid black;
-  margin-left:20px;
-  color: aliceblue;
-}
-.project_p, .pro-3 {
-  float:right;
-  width:33%;
-  height:160px;
-  background-color:white;
-  border:solid black;
-  color: aliceblue;
-
+  align-items: center;
+  justify-content: space-between; /* Adjusts distribution of space */
+  padding: 10px 20px; /* Adjust padding to ensure logo and menu items are vertically aligned */
 }
 
+.App-logo {
+  width: 8%;
+  max-width: 80px; /* Adjusted max-width for consistency */
+  min-width: 50px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-a {
-  padding: 15px; 
-  background-color: #f3eff7;
+.nav ul {
+  list-style: none;
+  margin: 0 auto; /* Centers the ul within the remaining space */
+  padding: 0;
+  color: #232425;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: center; /* Centers the items horizontally */
+  flex-grow: 1; /* Allows the ul to expand */
+}
+
+.nav li {
+  padding: 10px 15px; /* Adjusted padding for better spacing */
+}
+
+.nav a {
   text-decoration: none;
-  word-spacing: 15px;
-} 
-li {
-  display: inline;
+  color: rgb(34, 32, 32);
+  font-size: 16px;
+  transition: color 0.3s;
 }
-    
+
+.nav a:hover,
+.nav a:focus {
+  color: #ffdd40;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack logo and menu vertically on smaller screens */
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+
+  .nav__container {
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Adjusted to appear below the nav bar */
+    left: 0;
+    width: 100%; /* Ensures full width */
+    display: none; /* Initially hidden */
+    background-color: #f8fafc; /* Matches nav background */
+  }
+
+  .responsive__nav__show {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for better visibility */
+  }
+
+  .App-logo {
+    margin-bottom: 10px; /* Additional margin to separate logo from the menu */
+  }
+}

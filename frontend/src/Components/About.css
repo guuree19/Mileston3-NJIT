@@ -1,30 +1,74 @@
-.App .nav, .about_page{
-    background-color: rgb(2, 126, 50);
-    position: relative;
-    top: 280px;
-    height: 600px;
-    width: 650px;
-    font: 1em sans-serif;
-    font-size: large;
+/* This is the styling for the "About me" page */
+
+/* General styling for About page */
+.about_page {
+  font-family: 'Arial', sans-serif; /* Consistent font family */
+  color: #444; /* Default text color for better readability */
+  line-height: 1.6; /* Improved line spacing */
 }
 
-.about_page p{
-    color: rgb(10, 10, 10);
-    text-align: left;
-    display: flex;
-    width: 80%;
-    height: 40%;
-    font-family: serif;
-
-}
-.about_page h1{
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-    position: relative;
-    top: 0px;
-    right: 350px;
-    bottom: 400px;
-
+/* Styling for main headings */
+.about_page h1 {
+  font-size: 28px; /* Slightly larger font size for headings */
+  text-align: center;
+  margin-top: 50px; /* Reduced margin top for better space utilization */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333;
 }
 
+/* Styling for paragraphs */
+.about_page p {
+  margin-top: 20px; /* Reduced margin top for closer paragraph grouping */
+  padding: 0 15%; /* Horizontal padding for text alignment */
+  text-align: justify; /* Justified text for cleaner edges */
+}
+
+/* Specific styles for bold text within About page */
+.about_page b {
+  color: #019e3d; /* Highlight color for bold text */
+}
+
+/* Styling for submenu container */
+.sub__menus {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px; /* Slightly narrower for a cleaner look */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* More pronounced shadow for depth */
+  display: none; /* Hidden by default */
+}
+
+/* Style for active submenu */
+.sub__menus__Active {
+  display: block;
+}
+
+/* List styles for submenu */
+.sub__menus ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* List items in submenu */
+.sub__menus li {
+  padding: 8px 10px; /* Padding for touch targets */
+}
+
+/* Links in submenu */
+.sub__menus a {
+  color: #000; /* Ensured color is explicitly set for contrast */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sub__menus a:hover {
+  background-color: #f2f2f2; /* Light gray background on hover for visibility */
+}
+
+/* Handling hover for links directly in navigation related to submenu */
+.nav-link:hover + .sub__menus,
+.nav-link.active + .sub__menus {
+  display: block;
+  z-index: 100; /* High z-index to ensure visibility over other elements */
+}

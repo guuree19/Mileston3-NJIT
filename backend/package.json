@@ -12,13 +12,11 @@
   "description": "",
   "dependencies": {
     "config-js": "^1.1.15",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-request-router": "^1.0.4",
     "nodemon": "^2.0.20",
     "start-script": "^0.1.0"
-
   }
-  
-  
 }

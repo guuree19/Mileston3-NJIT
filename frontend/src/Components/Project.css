@@ -1,88 +1,37 @@
-.project_p .Nav{
-    /* background-color: rgb(137, 183, 223); */
-    height: 450px;
-    text-transform: uppercase;
-    font: 1em sans-serif;
-    border:solid 1px #0094ff;
-    padding:10px;
-    margin:5px;
-    font-size:15px;
-    font-family:Verdana;
-    text-align:center;
-    border-radius:10px;
-    color: aliceblue;
-}
-
-.App  .project_p{
-    border:solid 1px #2600ff;
-    font-size:15px;
-    font-family:Verdana;
-    text-align:center;
-    border-radius:10px;
-    width: 100%;
-}
-.project_p{
-    display: flexbox;
-    border:solid 1px #2600ff;
-    font-size:15px;
-    font-family:Verdana;
-    text-align:center;
-    border-radius:10px;
-    width: 100%;
-    position: relative;
-    top: 350px;
-    right: 623px;
-}
-.project_p .pro-1 {
-    float:left;
-    width:33%;
-    height:160px;
-    background-color:rgb(3, 108, 156);
-    border:solid black;
-    color: aliceblue;
-}
-.project_p, .pro-2 {
-    float:left;
-    width:33%;
-    height:160px;
-    background-color:rgb(3, 19, 92); 
-    border:solid black;
-    margin-left:20px;
-    color: aliceblue;
-}
-.project_p, .pro-3 {
-    float:right;
-    width:33%;
-    height:160px;
-    background-color:white;
-    border:solid black;
-    color: aliceblue;
-
-}
-.App,.project_p, .pro-1  .pro-2  .pro-3{
-    padding: 12px;
-    height:190px;
-    background-color:green;
-    padding-top:20px;
-    padding-left:15px;
-    padding-right:15px;
-    color: aliceblue;
+/* This is the styling for the projects page */
+.project-container {
+    margin-top: 150px;
     display: grid;
-    word-spacing: 14px;
-}
-.App, .Nav{
-    display: flex;
-    position: relative;
-    top: 350px;
-    height: 200px;
-    color: rgb(239, 248, 243);
-};
-
-
-
-
-
-
-    
-
-
+    background-color: #f0f0f0; /* Use a light background color for better readability */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px; /* Add some padding for better spacing */
+  }
+  
+  .project-item {
+    background-color: #fff; /* Use a white background color for project items */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    transition: transform 0.2s ease; /* Add a smooth transition on hover */
+  }
+  
+  /* Add hover effect to project items */
+  .project-item:hover {
+    transform: translateY(-5px); /* Move the project item up slightly on hover */
+  }
+  
+  /* Style for individual project items */
+  .project-1 {
+    grid-column: 1 / span 1;
+  }
+  
+  .project-2 {
+    grid-column: 2 / span 1;
+  }
+  
+  .project-3 {
+    grid-column: 3 / span 1;
+  }
+  
