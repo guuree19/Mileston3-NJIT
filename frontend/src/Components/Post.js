@@ -1,16 +1,13 @@
 import React from 'react';
-import Nav from './Nav';
+import './postForm'; // Assume you create a Post.css for styling
 
-const Post = (props) => {
-  const { title, author, content } = props;
-
+const Post = ({ title, author, content }) => {
   return (
-    <div>
-      <Nav />
+    <article className="post">
       <h2>{title}</h2>
       <h3>by {author}</h3>
       <p>{content}</p>
-    </div>
+    </article>
   );
 };
 

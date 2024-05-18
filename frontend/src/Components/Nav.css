@@ -1,151 +1,79 @@
-/* nav.css */
-
-/* This styles the main navigation bar */
+/* Base styling for navigation */
 .nav {
-  background-color: rgb(102, 135, 177); /* Updated background color */
-  width: 100%;
   position: fixed;
   top: 0;
-  height: 80px;
-  border: 1px solid rgb(0, 0, 0, 0.5);
-  z-index: 99;
-}
-/* Add styling for the Post Form link */
-.nav-link {
-  margin-right: 15px;
-  font-size: 18px; /* Slightly reduce font size for a cleaner look */
-  color: #444; /* Use a slightly darker color for better contrast */
-  text-transform: uppercase;
-  letter-spacing: 0.08em; /* Slightly reduce letter spacing */
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease; /* Add a smooth transition effect */
-}
-
-.nav-link:hover {
-  color: #6c6e72; /* Change color on hover for better feedback */
-}
-
-/* Style for the active navigation link */
-.nav-link.active {
-  color: #2d038f;
-  /* You can also consider adding a background color or underline for active links */
-  /* background-color: #e2e2e2; */
-  /* text-decoration: underline; */
-}
-
-
-/* This styles the container for the navigation items */
-.nav__container {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8fafc;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background-color 0.3s;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  height: 100%;
+  justify-content: space-between; /* Adjusts distribution of space */
+  padding: 10px 20px; /* Adjust padding to ensure logo and menu items are vertically aligned */
 }
 
-/* This styles the hamburger menu button */
-.menubar__button {
-  background-color: rgb(2, 126, 50);
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  top: 15px;
-  left: 45px; /* Change 'right' to 'left' */
-  cursor: pointer;
-  border: none;
-  outline: none;
-  z-index: 100;
+.App-logo {
+  width: 8%;
+  max-width: 80px; /* Adjusted max-width for consistency */
+  min-width: 50px;
   display: block;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.menubar__button i {
-  font-size: 30px;
-  color: #ffffff; /* Set icon color */
-}
-
-/* This styles the main navigation items */
-.nav__container li {
-  margin-left: 50px;
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-.nav__container li:hover {
-  cursor: pointer;
-}
-
-/* This styles the active navigation item */
-.active {
-  color: rgb(255, 229, 0);
-}
-
-/* This styles the responsive navigation menu */
-.responsive__nav__show {
-  background-color: rgb(102, 135, 177);
-  width: 100%;
-  position: fixed;
-  height: 100vh;
-  top: 80px;
-  left: 0;
-  transition: transform 0.5s ease-in-out;
-  z-index: 98; /* Decreased z-index value */
-  overflow-y: auto;
-  padding: 50px 0 0;
-  box-sizing: border-box;
-  margin: 0;
-  text-align: left;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* This styles the hamburger menu button animation */
-.menubar__button:after,
-.menubar__button:before {
-  content: "";
-  position: absolute;
-  top: 23px;
-  right: 15px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  transition: all 0.2s;
-}
-
-.menubar__button:hover:after,
-.menubar__button:hover:before {
-  box-shadow: 0px 5px 0px #fff, 0px -5px 0px #fff;
-}
-
-/* This styles the sub-menus (dropdowns) */
-.sub__menus {
-  margin: 0;
+.nav ul {
+  list-style: none;
+  margin: 0 auto; /* Centers the ul within the remaining space */
   padding: 0;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+  color: #232425;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  justify-content: center; /* Centers the items horizontally */
+  flex-grow: 1; /* Allows the ul to expand */
 }
 
-/* This styles the sub-menus when active */
-.sub__menus__Active {
-  max-height: 400px;
+.nav li {
+  padding: 10px 15px; /* Adjusted padding for better spacing */
 }
 
-.sub__menus li {
-  margin: 0;
-  padding: 0px;
+.nav a {
+  text-decoration: none;
+  color: rgb(34, 32, 32);
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #ffdd40;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack logo and menu vertically on smaller screens */
+    padding: 10px; /* Reduced padding on smaller screens */
+  }
+
+  .nav__container {
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Adjusted to appear below the nav bar */
+    left: 0;
+    width: 100%; /* Ensures full width */
+    display: none; /* Initially hidden */
+    background-color: #f8fafc; /* Matches nav background */
+  }
+
+  .responsive__nav__show {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for better visibility */
+  }
+
+  .App-logo {
+    margin-bottom: 10px; /* Additional margin to separate logo from the menu */
+  }
 }

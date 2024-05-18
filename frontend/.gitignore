@@ -22,3 +22,107 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+# import java.util.Scanner;
+
+# public class ProperName {
+#    public static void main(String[] args) {
+#    Scanner scnr = new Scanner(System.in);
+
+#    String properName = " ";
+#    String firstName = "";
+#    String middleName = " ";
+#    String lastName = "";
+#    int indexOfFirstSpace = 0;
+#    int indexOfLastSpace = 0;
+#    int totalChracters = 0;
+#    char FirstInitial = '?';
+#    char middleInitial = '?';
+
+#    System.out.print("Enter a proper name : ");
+#    properName = scnr.nextLine();
+
+#    indexOfFirstSpace = properName.indexOf(" ");
+#    indexOfLastSpace = properName.lastIndexOf(" ");
+
+#    firstName = properName.substring(0, indexOfFirstSpace);
+#    middleName = properName.substring(indexOfFirstSpace + 1,indexOfLastSpace);
+#    lastName = properName.substring(indexOfLastSpace +1);
+#    totalChracters = firstName.length() + middleName.length() + lastName.length();
+#    FirstInitial = properName.charAt(0);
+#    middleInitial = properName.charAt(indexOfFirstSpace + 1);
+
+#    System.out.println("Total characters    : " + totalChracters);
+#    System.out.println("First name          : " + firstName);
+#    System.out.println("Middle name         : " + middleName);
+#    System.out.println("Last name           : " + lastName);
+#    System.out.println("First initial       : " + FirstInitial);
+#    System.out.println("Middle initial      : " + middleInitial);
+#    System.out.println("Last name first     : " + lastName + ", " + firstName + " " + middleName);
+#    System.out.printf("Short form          : %c. %c. %s\n", FirstInitial, middleInitial, lastName  );
+      
+#    }
+# }
+
+
+# public class PrintSpider {
+#    public static void main(String[] args) {
+#       // write your code here below
+#     System.out.println("  / _ \\");
+#     System.out.println("\\_\\(_)/_/");
+#     System.out.println(" _//\"\\\\_");
+#     System.out.println("  /   \\");
+
+
+      
+      
+      
+#    }
+# }
+
+# Run the program and observe the output. Change the input box value from 3 to another number, and run again.
+# import java.util.Scanner;
+
+# public class CableTVChannels {
+
+#    public static void main(String[] args) {
+#       int userChannel;
+#       char channelType;
+#       Scanner scnr = new Scanner(System.in);
+
+#       userChannel = scnr.nextInt();
+
+#       if ((userChannel >= 2) && (userChannel <= 499)) {
+#          channelType = 's';
+#       }
+#       else if ((userChannel >= 1002) && (userChannel <= 1499)) {
+#          channelType = 'h';
+#       }
+#       else {
+#          channelType = 'e';
+#       }
+
+#       System.out.println("Channel type: " + channelType);
+#    } 
+# }
+
+// need file
+# public class Main {
+#    public static void main(String[] args) {
+#       // you may wish to write some code in this main method
+#       // to test your method.
+#    boolean _sorted = isSorted(3,3,2);
+#    System.out.println(_sorted);
+#    }
+   
+#  public static boolean isSorted(int num1, int num2, int num3){
+#   if((num1 <= num2 && num2 <= num3) || (num3 <= num2 && num2 <= num1) && (num1 != num2 && num2 != num3)){
+#   return true;
+#  }else{
+#   return false;
+# }
+
+#  }   
+# }

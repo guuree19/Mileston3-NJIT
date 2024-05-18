@@ -1,25 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Post from './Post';
-import Nav from './Nav';
 import './Blog.css';
 
 const Blog = () => {
-  const posts = [
-    {
-      title: 'My First Blog Post',
-      author: 'John Doe',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor bibendum arcu, id finibus nulla hendrerit id. Nunc in gravida risus.',
-    },
-    {
-      title: 'My Second Blog Post',
-      author: 'Jane Smith',
-      content: 'Sed euismod dapibus felis quis feugiat. Pellentesque consequat elit quis turpis ultricies, ac rutrum quam pretium. In lacinia malesuada urna.',
-    },
-  ];
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Placeholder for fetching data from an API
+    fetch('http://localhost:5001/api/posts')
+      .then(response => response.json())
+      .then(data => {
+        setPosts(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Failed to fetch posts:', err);
+        setError('Failed to load posts.');
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <div className='blog-sec'>
-      <Nav />
       <h1>Blog Posts</h1>
       {posts.map((post, index) => (
         <Post key={index} title={post.title} author={post.author} content={post.content} />

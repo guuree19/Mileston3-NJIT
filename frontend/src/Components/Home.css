@@ -1,23 +1,94 @@
-.home-container {
-    font-size: 18px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(95, 93, 93, 0.2);
+/* Home.css */
 
-    margin-top: 150px;
-    display: grid;
-    background-color: #f0f0f0; /* Use a light background color for better readability */
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px; /* Add some padding for better spacing */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/Images/welcome_pg.png');
+  background-size: cover; /* Change to 'cover' for a full background */
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: flex-end; /* Align content to the right */
+  padding-right: 20%; /* Right padding to not have text stick to edge */
 }
-  
-.home-container p {
-    margin: 0;
-    color: rgb(19, 1, 1);
+
+.home-content {
+  width: 40%; /* Adjust width of content area */
+  background-color: rgba(208, 238, 213, 0.9); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the content box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
-  
-.home-container b {
-    color: #008080;
+
+.home-content p {
+  color: rgb(19, 1, 1);
+  text-align: left; 
+  padding: 10px; /* Uniform padding */
 }
-  
+
+.home-content h1 {
+  color: black;
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.cta-button {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .home-content {
+    width: 50%; /* Adjust width for larger screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding-top: 30px;
+    padding-right: 10%; /* Adjust right padding on tablets */
+    justify-content: center; /* Center content on smaller screens */
+  }
+  .home-content {
+    width: 80%; /* Increase width for better readability on smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding-top: 20px;
+    padding-right: 5%; /* Minimal padding for mobile devices */
+  }
+  .home-content {
+    width: 90%; /* Most of the screen width used for content on small devices */
+  }
+}
+
+/* Keyframe animation for background color transitions */
+@keyframes colorFade {
+  0% { background-color: rgba(0, 0, 139, 0.3); }
+  50% { background-color: rgba(0, 0, 139, 0.45); }
+  100% { background-color: rgba(0, 0, 139, 0.6); }
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: colorFade 10s ease-in-out infinite alternate;
+}

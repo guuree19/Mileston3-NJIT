@@ -1,0 +1,28 @@
+{
+  "name": "mileston-3njit",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+      "postinstall": "cd frontend && npm install && npm run build && cd ../backend && npm install && node index.js",
+      "start": "node backend/index.js"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guuree19/Mileston3-NJIT.git"
+  },
+  "keywords": [
+    "[\"web",
+    "development\"",
+    "\"front-end\"",
+    "\"React\"",
+    "\"Node.js\"]"
+  ],
+  "author": "Abdul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guuree19/Mileston3-NJIT/issues"
+  },
+  "homepage": "https://github.com/guuree19/Mileston3-NJIT#readme"
+}

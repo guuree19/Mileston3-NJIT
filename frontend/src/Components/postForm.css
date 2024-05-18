@@ -1,50 +1,87 @@
 /* PostForm.css */
 .post-form-container {
-    background-color: #f7f3f3;
-    padding: 20px;
-    margin-top: 80px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .form-actions {
-    text-align: center;
-  }
-  
-  .submit-button {
-    background-color: #0080ff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .submit-button:hover {
-    background-color: #0059b3;
-  }
-  
+  background-color: #597396;
+  color: #fff; /* Ensure text is readable against the dark background */
+  padding: 40px; /* Increase padding for better spacing */
+  margin: 50px auto; /* Center the form on the page */
+  width: 80%; /* Set a max width for larger screens */
+  max-width: 600px; /* Max width to maintain form dimensions */
+  border-radius: 8px; /* Smoothed corners */
+  box-shadow: 0 4px 12px rgba(141, 134, 134, 0.3); /* Enhanced shadow for depth */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Added margin for spacing between title and form */
+  font-size: 1.75rem; /* Larger font size for the title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Full width to align children properly */
+}
+
+label {
+  font-weight: bold;
+  display: block; /* Make label a block to add space */
+  margin-bottom: 5px; /* Space between label and input */
+  font-size: 1.1rem; /* Increase font size for better readability */
+}
+
+input,
+textarea {
+  width: calc(100% - 20px); /* Subtract padding from width */
+  padding: 12px; /* More padding for better text visibility */
+  margin-bottom: 20px; /* Increase margin for better separation */
+  border: 2px solid #555; /* Darker border for contrast */
+  border-radius: 5px;
+  background-color: #222; /* Darker background for inputs */
+  color: #fff; /* Light color for text */
+  font-size: 1rem; /* Increase font size for better readability */
+}
+
+input:focus,
+textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #0080ff; /* Highlight focus with primary color */
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px; /* Increase margin for visual separation from inputs */
+}
+
+.submit-button, .edit-button {
+  padding: 12px 25px; /* Larger padding for better touch */
+  font-size: 1rem; /* Larger font size */
+  letter-spacing: 0.05rem; /* Spacing out letters for readability */
+  width: 150px; /* Fixed width for uniform buttons */
+  margin-top: 10px; /* Spacing from last input to button */
+}
+
+.submit-button {
+  background-color: #0080ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smoother transition and subtle transform */
+}
+
+.submit-button:hover, .submit-button:focus {
+  background-color: #0059b3;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.edit-button {
+  background-color: #ffc107;
+  margin-right: 10px; /* Spacing between buttons */
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.edit-button:hover, .edit-button:focus {
+  background-color: #ffab00;
+  transform: translateY(-2px);
+}

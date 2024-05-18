@@ -1,34 +1,50 @@
 /* blog.css */
 
 .blog-sec {
-    background-color: #9690ee; /* Reusing the background color from previous work */
-    padding: 20px;
-    margin-top: 80px;
-    border-radius: 5px;
-    color: #fff; /* Set text color to white */
-  }
-  
-  .blog-sec h1 {
-    font-size: 2rem;
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Add spacing below the heading */
-  }
-  
-  /* Optional: Add styles for each individual blog post */
-  .post {
-    margin-bottom: 20px; /* Add spacing between blog posts */
-    padding: 10px;
-    background-color: #fff; /* Set background color for each blog post */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
-  }
-  
-  .post h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px; /* Add spacing below the title */
-  }
-  
-  .post p {
-    font-size: 1.2rem;
-  }
-  
+  background-color: #9690ee; /* Soft purple background */
+  color: #0d0d0d; /* Dark text for readability */
+  padding: 40px; /* Increase padding for better framing */
+  margin: 50px auto; /* Center the section and add vertical spacing */
+  border-radius: 8px; /* Smoothed corners */
+  max-width: 800px; /* Control the width on larger screens */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.blog-sec h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional and modern font */
+  font-size: 2.5rem; /* Larger font size for main heading */
+  text-align: center;
+  margin-bottom: 30px; /* More space below the heading */
+  color: #fff; /* White text color */
+}
+
+/* Styles for each individual blog post */
+.post {
+  margin-bottom: 30px; /* More space between posts */
+  padding: 20px; /* More internal spacing */
+  background-color: #fff; /* Light background for contrast */
+  color: #333; /* Darker text color for better readability */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post h2 {
+  font-family: 'Arial', sans-serif; /* Consistent and readable font */
+  font-size: 1.75rem; /* Increase font size */
+  margin-bottom: 15px; /* More spacing below the post title */
+  color: #4A4A4A; /* Soft black for titles */
+}
+
+.post p {
+  font-family: 'Georgia', serif; /* Serif font for body text, improving readability */
+  font-size: 1.25rem; /* Larger body text for better legibility */
+  line-height: 1.6; /* Increase line height for better text flow */
+  color: #666; /* Grey color reduces strain over long reading */
+}
+
+/* Optional: Add hover effect to each post for interactive feedback */
+.post:hover {
+  background-color: #f8f8f8; /* Slightly different background on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}

@@ -3,6 +3,7 @@ import "./Contact.css";
 import Nav from "./Nav";
 
 function Contact() {
+  const email = process.env.REACT_APP_EMAIL;
   return (
     <div className="contact-container">
       <Nav />
@@ -19,13 +20,20 @@ function Contact() {
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="abdul@abdulazizali.com"
+            />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message:</label>
             <textarea id="message" name="message" rows="4" />
           </div>
-          <button className="submit-button" type="submit">Submit</button>
+          <button className="submit-button" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>

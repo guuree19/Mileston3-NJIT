@@ -67,9 +67,14 @@ const PostForm = () => {
           />
         </div>
         <div className="form-actions">
+          
+          <button type="button" className="edit-button">
+            Edit
+          </button>
           <button type="submit" className="submit-button">
             Submit
           </button>
+
         </div>
       </form>
     </div>
